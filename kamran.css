@@ -1,0 +1,38 @@
+
+
+#one{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lawngreen;
+   
+}
+
+#thero{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+#two{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+   
+}
+
+#suallar{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+#xal{
+    text-align: center;
+    margin-top: 0 auto;
+    font-size: 30px;
+ 
+}
+
+.con{
+  margin-top: 150px;
+}

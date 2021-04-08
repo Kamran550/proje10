@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kamran.css">
+</head>
+<body>
+   <div class="con">
+       <h1 id="thero">True - T   False - F</h1>
+    <h1 id="one">How well do you know me?</h1>
+    
+    <p id="xal">Başlamaq üçün <strong>Hər hansı bir tuşa </strong>-bas</p>
+
+    <p id="suallar"></p>
+
+
+   </div>
+
+    <script>
+            
+     document.body.style.backgroundColor =  'rgb(245, 239, 239)'
+
+var questions = {
+    q1: ["My name is Kamran Farzaliyev?","t"],
+    q2: ["I live in Baku","f"],
+    q3: ["I study at ADNSU","t"],
+    q4: ["My lovely car is BMW","f"],
+    q5: ["I am 21 years old", "f"],
+    q6: ["My Brother's name  is Cavidan","t"],
+    q7: ["My favorite city is Canada", "f"],
+    q8: ["My hobby is Code write", "t"]
+}
+
+var sual = 0;
+var xal = 0;
+ var suallar = [questions.q1,questions.q2,questions.q3,questions.q4,questions.q5,questions.q6,questions.q7,questions.q8,]
+
+ function Cavab(){
+    if(sual<= (suallar.length-1 )){
+    document.querySelector("#suallar").innerHTML = suallar[sual][0]
+}else{
+    document.querySelector("#suallar").innerHTML = name + ":" + "Oyun bitdi!"
+    document.querySelector("#xal").innerHTML =name + ":" +  "Xalın: " +  suallar.length + " üzərindən " + xal;
+   
+}
+ };
+
+ function New(){
+    document.querySelector("#xal").innerHTML = "Xal:" + xal
+ };
+ Cavab();
+     New();
+ window.onkeypress = function(e){
+    
+
+     if(sual === suallar){
+         return;
+     }
+     letter = e.key;
+
+     if(letter === "t" || letter ==="f"){
+         if(letter === suallar[sual][1] ){
+             xal++;
+             New();
+         }else{
+            alert("Heyif:)")
+         }
+     }else{
+         alert("Ancaq T və F daxil edə bilərsiz!")
+         return;
+     }
+     sual++;
+     Cavab();
+ }
+
+ var name = prompt("What's your name?")
+
+    
+    </script>
+</body>
+</html>
